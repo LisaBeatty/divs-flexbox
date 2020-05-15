@@ -97,28 +97,54 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background: url(../img/tomatoes.jpg) no-repeat center center fixed;
+  background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
+  color: #fff;
 }
 
+header,
+footer {
+  font-family: 'Bebas Neue', cursive;
+  height: 80px;
+  width: 100%;
+}
+
+main {
+  height: 250px;
+  width: 100%;
+}
+
+header,
+footer,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-between;
   /*add display:flex and set justify-content to space-between*/
   font-weight: 400;
+  background-color: rgba(0, 26, 0, 0.5);
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
-  width: 30%;
+  width: 25%;
   justify-content: center;
   align-items: center;
   padding: 1em;
@@ -126,14 +152,20 @@ body {
   color: #fff;
   line-height: 1.5em;
   font-size: 1.1em;
-  background-color: #cc6600;
   height: 300px;
 }
 
 li {
   list-style: square;
 }
-
+footer a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+footer p{
+  text-align: center;
+}
 
 
 /* ==========================================================================
